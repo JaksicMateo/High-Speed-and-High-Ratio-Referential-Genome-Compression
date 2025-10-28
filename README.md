@@ -2,7 +2,7 @@
 
 ## About the Project
 
-Authors: Karla Budimir and Mateo Jakšić
+Author: Mateo Jakšić
 
 This project was developed as part of the **[Bioinformatics 1](https://www.fer.unizg.hr/predmet/bio1)** course.  
 
