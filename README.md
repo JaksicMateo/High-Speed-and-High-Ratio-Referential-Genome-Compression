@@ -11,6 +11,25 @@ The main reference for the project is the following scientific article:
 > Yuansheng Liu, Hui Peng, Limsoon Wong, Jinyan Li, High-speed and high-ratio referential genome compression, Bioinformatics, Volume 33, Issue 21, November 012017, Pages 3364–3372, 
 > [Link to the article](https://academic.oup.com/bioinformatics/article/33/21/3364/3885699?login=true) 
 
+## Overview
+
+This project implements a **referential genome compression and decompression system** designed to achieve both high compression ratios and fast processing speeds. Genome data is typically very large, and this implementation focuses on efficiently reducing file size while maintaining data integrity through lossless compression techniques.
+
+## Key Features
+
+- **High Compression Ratio**: Leverages referential compression by comparing a target genome against a reference genome, storing only the differences
+- **High-Speed Processing**: Optimized C++ implementation for fast compression and decompression operations
+- **Lossless Compression**: Ensures complete data recovery during decompression
+- **Multiple Genome Support**: Supports various bacterial genomes (e.g., ASM1038v1, ASM1326v1, ASM21047v1, ASM285371v1, ASM369716v2)
+- **Evaluation Metrics**: Includes tools to verify compression quality and measure compression ratios
+
+## How It Works
+
+The project implements the algorithm described in the referenced scientific article:
+1. **Compression**: Reads a reference genome and target genome, identifies differences, and encodes them efficiently
+2. **Decompression**: Uses the reference genome and compressed data to reconstruct the original target genome
+3. **Evaluation**: Compares the decompressed output with the original to verify correctness and measure compression metrics
+
 ## How to run
 
 1. Clone the repository
